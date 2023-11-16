@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+}
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    padding: 10px 0;
+    margin: 0;
+}
+.field-box {
+    border: 2px solid #d0d0d0;
+    float: left;
+}
+.field {
+    position: relative;
+    width: 1200px;
+    height: 720px;
+    display: grid;
+    grid-template: repeat(24, 1fr) / repeat(40, 1fr);
+}
+.tile {
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    background-image: url(images/tile-.png);
+    z-index: 6;
+}
+.tileW {
+    background-image: url(images/tile-W.png);
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    z-index: 5;
+}
+.tileE {
+    background-image: url(images/tile-E.png);
+    z-index: 10;
+}
+.tileP {
+    background-image: url(images/tile-P.png);
+    z-index: 10;
+}
+.tileHP {
+    background-image: url(images/tile-HP.png);
+    z-index: 9;
+}
+.tileSW {
+    background-image: url(images/tile-SW.png);
+    z-index: 9;
+}
+.healthE {
+    background-color: #ff0000;
+    z-index: 11;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 3px;
+}
+.healthP {
+    background-color: #00ff00;
+    z-index: 11;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 3px;
+}
